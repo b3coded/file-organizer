@@ -66,39 +66,40 @@ namespace File_Organizer
             string folderName = "";
 
 
-            if (ext == ".ext" || ext == ".pdf")
+
+            if (ext.Equals(".ext") || ext.Equals(".pdf") || ext.Equals(".docx"))
             {
                 folderName = "Text Files";
             }
-            else if (ext == ".exe" || ext == ".msi")
+            else if (ext.Equals(".exe") || ext.Equals(".msi"))
             {
                 folderName = "Applications and Games";
             }
-            else if (ext == ".zip" || ext == ".rar" || ext == ".7zip")
+            else if (ext.Equals(".zip") || ext.Equals(".rar") || ext.Equals(".7zip"))
             {
                 folderName = "Compressed Files";
             }
-            else if (ext == ".img" || ext == ".iso" || ext == ".dmg")
+            else if (ext.Equals(".img") || ext.Equals(".iso") || ext.Equals(".dmg"))
             {
                 folderName = "Install Media";
             }
-            else if (ext == ".png" || ext == ".jpg" || ext == ".jpeg" || ext == ".gif")
+            else if (ext.Equals(".png") || ext.Equals(".jpg") || ext.Equals(".jpeg") || ext.Equals(".gif"))
             {
                 folderName = "Images";
             }
-            else if (ext == ".mp3" || ext == ".aac")
+            else if (ext.Equals(".mp3") || ext.Equals(".aac"))
             {
                 folderName = "Musics";
             }
-            else if (ext == ".mp4" || ext == ".flv" || ext == ".3gp" || ext == ".avi")
+            else if (ext.Equals(".mp4" )|| ext.Equals(".flv") || ext.Equals(".3gp") || ext.Equals(".avi"))
             {
                 folderName = "Videos";
             }
-            else if (ext == ".html" || ext == ".css" || ext == ".php" || ext == ".url")
+            else if (ext.Equals(".html") || ext.Equals(".css") || ext.Equals(".php") || ext.Equals(".url"))
             {
                 folderName = "Web Files";
             }
-            else if(ext == ".ini")
+            else if(ext.Equals(".ini"))
             {
                 folderName = "";
             }

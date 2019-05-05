@@ -1,0 +1,10 @@
+C:\Users\jneto\source\repos\File Organizer\File Organizer\bin\Debug\File Organizer.exe.config
+C:\Users\jneto\source\repos\File Organizer\File Organizer\bin\Debug\File Organizer.exe
+C:\Users\jneto\source\repos\File Organizer\File Organizer\bin\Debug\File Organizer.pdb
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File Organizer.csprojAssemblyReference.cache
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File_Organizer.Form1.resources
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File_Organizer.Properties.Resources.resources
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File Organizer.csproj.GenerateResource.cache
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File Organizer.csproj.CoreCompileInputs.cache
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File Organizer.exe
+C:\Users\jneto\source\repos\File Organizer\File Organizer\obj\Debug\File Organizer.pdb

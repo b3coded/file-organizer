@@ -22,7 +22,7 @@ OS: <strong>Windows Only</strong>
 
 ### Step 4: Done!
 
-Now check your folder on Windows Explorer to verify
+Now check your folder on Windows Explorer to check
 
 ![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/pasta2.PNG "My Downloads Folder")
 

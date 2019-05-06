@@ -4,7 +4,7 @@
 OS: <strong>Windows Only</strong>
 
 ## Contents
-- [How to Use?](#-usage)
+- [How to Use?](#-how-to-use)
 
 ## 📋 How to Use?
 

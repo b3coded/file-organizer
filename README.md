@@ -1,18 +1,28 @@
 # :file_folder: File Organizer
+:rocket: Organize your files faster with a few clicks.
 
-Here's my Downloads folder.
+OS: <strong>Windows Only</strong>
 
-![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/pasta.PNG "Logo Title Text 1")
+## Contents
+- [How to Use?](#-usage)
 
-After File Organizer Scan. (You can select another folder, by default is Downloads)
+## 📋 How to Use?
 
-![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/app1.PNG "Logo Title Text 1")
+### Step 1: Choose the folder to organize
 
-After Organized.
+![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/pasta.PNG "Here's my Downloads folder")
 
-![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/app2.PNG "Logo Title Text 1")
+### Step 2: Open the File Organizer
 
-My Downloads Folder.
+![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/app1.PNG "After File Organizer Scan")
 
-![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/pasta2.PNG "Logo Title Text 1")
+### Step 3: Select your folder (by default is Downloads) and press Organize!
+
+![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/app2.PNG "After Organized")
+
+### Step 4: Done!
+
+Now check your folder on Windows Explorer to verify
+
+![alt text](https://github.com/b3coded/file-organizer/blob/master/screenshots/pasta2.PNG "My Downloads Folder")
 

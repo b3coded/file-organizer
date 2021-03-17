@@ -13,50 +13,64 @@ namespace File_Organizer
 {
     public partial class Form1 : Form
     {
-        string sSelectedFolder;
-        string[] files;
+        string sSelectedFolder; // path to selected folder
+        string[] files; // all filenames
         DirectoryInfo dir;
 
         public Form1()
         {
             InitializeComponent();
-            string userName = Environment.UserName;
-            sSelectedFolder = @"C:\Users\" + userName + @"\Downloads";
+            string userName = Environment.UserName; // get user name
+            sSelectedFolder = @"C:\Users\" + userName + @"\Downloads"; // use download folder as default
             
-            files = Directory.GetFiles(sSelectedFolder);
-            fileCount.Text = files.Length.ToString();
-            currentFolder.Text = sSelectedFolder;
+            files = Directory.GetFiles(sSelectedFolder); // load all files from download folder
+            fileCount.Text = files.Length.ToString(); // how much files
+            currentFolder.Text = sSelectedFolder; // print selected folder in window
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            sSelectedFolder = getPath();
-            currentFolder.Text = sSelectedFolder;
-            files = Directory.GetFiles(sSelectedFolder);
-            fileCount.Text = files.Length.ToString();
+
+            //
+            //
+            // Button, that selects custom folder
+            //
+            //
+
+            sSelectedFolder = getPath(); // get user selected folder
+            currentFolder.Text = sSelectedFolder; // print selected folder in window
+            files = Directory.GetFiles(sSelectedFolder); // get all files
+            fileCount.Text = files.Length.ToString(); // number of files
         }
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-            organizar();
+
+            //
+            //
+            //Button that calls organize function
+            //
+            //
+
+            organize(); // call organize function
         }
 
-        private void organizar()
+        private void organize()
         {
-            foreach (string name in files)
+            foreach (string name in files) // for each file in folder
             {
-                if (getFolderNameByExtension(name) != "")
+                if (getFolderNameByExtension(name) != "") // Calls function that retuns folder name for given file extension, if no folder name is returned, it will leave it as is
                 {
-                    string pastaDestino = sSelectedFolder + @"\" + getFolderNameByExtension(name) + @"\" + Path.GetFileName(name);
-                    new System.IO.FileInfo(pastaDestino).Directory.Create();
-                    File.Move(name, pastaDestino);
+                    string pastaDestino = sSelectedFolder + @"\" + getFolderNameByExtension(name) + @"\" + Path.GetFileName(name); // New file path
+                    new System.IO.FileInfo(pastaDestino).Directory.Create(); // Create folder retuned by getFolderNameByExtension
+                    File.Move(name, pastaDestino); // move the file to new directory
                 }
                 
             }
 
-            files = Directory.GetFiles(sSelectedFolder);
-            fileCount.Text = files.Length.ToString();
-            MessageBox.Show("Yaaaay, organized files! xD");
+            files = Directory.GetFiles(sSelectedFolder); // Get all files in selected folder
+            fileCount.Text = files.Length.ToString(); // Number of files
+            MessageBox.Show("Yaaaay, organized files! xD"); // Popup that everything is done
         }
 
         /// <summary>
@@ -66,6 +80,12 @@ namespace File_Organizer
         /// <returns>Folder Name by filetype</returns>
         private string getFolderNameByExtension(string fileName)
         {
+
+            //
+            //
+            // Function to return folder name for given extension
+            //
+            //
 
             string ext = Path.GetExtension(fileName);
             string folderName = "";
@@ -121,15 +141,22 @@ namespace File_Organizer
 
         public string getPath()
         {
+
+            //
+            //
+            // Function for selecting folder
+            //
+            //
+
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             // fbd.Description = "Custom Description";
 
-            if (fbd.ShowDialog() == DialogResult.OK)
+            if (fbd.ShowDialog() == DialogResult.OK) // If valid valid folder is returned, return it's path
             {
                 dir = new DirectoryInfo(fbd.SelectedPath);
                 return fbd.SelectedPath;
             }
-            else
+            else // Else return downloads folder path
             {
                 string downloads = "";
                 string userName = Environment.UserName;
